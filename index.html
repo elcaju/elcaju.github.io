@@ -1,1 +1,57 @@
-Hello World
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wicked Suits</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/html2canvas.js" type="text/javascript"></script> 
+</head>
+
+<body>
+    <div>
+        <h1>Wicked Suits</h1>
+        <p class="note">
+            For <a href="https://twitter.com/WickedCraniums" target="_blank">Wicked Craniums</a>, by <a href="https://twitter.com/cajutweets" target="_blank">caju</a>
+        </p>
+        <p>
+            Step 1 - Insert your cranium ID and click on "Suit up!".
+        </p>
+        <p>
+            Step 2 - Click on "Final Image" to render the savable image.
+        </p>
+        <p>
+            Step 3 - On the final image, right-click - save as.
+        </p>
+        <p><u>
+            Note: If the image servers are slow, wait a little for the image to load.
+        </u></p>
+    </div>
+
+    <div class="input">
+        <form action="index.html" method="GET">
+            <label> Cranium ID</label>
+            <input name="cranium_id">
+            <button class="button">Suit up!</button>
+        </form>
+    </div>
+     
+    <div id="myHtml" class="container">
+            <div class="container" id="canvas_id">
+                <div class="c-layer c-layer-1">
+                    <img id="cranium" src="" class="image">
+                </div>
+                <div class="c-layer c-layer-2">
+                    <img src="test images/suit_w_pin-removebg2.png" class="image">
+                </div>
+            </div>
+    </div>
+ 
+    <input id="btn_convert" class="button2" type="button" value="Final Image" />
+    <div id="teste">
+    </div>
+</body>
+</html>
