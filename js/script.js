@@ -30,7 +30,7 @@ $(document).ready(function () {
                 var anchorTag = document.createElement("a");
                 document.body.appendChild(anchorTag);
                 document.getElementById("teste").appendChild(canvas);
-                anchorTag.download = "filename.jpg";
+                anchorTag.download = "WickedSuit.jpg";
                 anchorTag.href = canvas.toDataURL();
                 anchorTag.target = '_blank';
                 anchorTag.click();
