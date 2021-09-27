@@ -15,13 +15,16 @@
     <div>
         <h1>Wicked Suits</h1>
         <p class="note">
-            For <a href="https://twitter.com/WickedCraniums" target="_blank">Wicked Craniums</a>, by <a href="https://twitter.com/cajutweets" target="_blank">caju</a>. Suit edit by <a href="https://twitter.com/epkytnft" target="_blank">epkyt</a>!
+            For <a href="https://twitter.com/WickedCraniums" target="_blank">Wicked Craniums</a>, by <a href="https://twitter.com/cajutweets" target="_blank">caju</a>
         </p>
         <p>
-            Step 1 - Insert your cranium ID and click on "Suit up!".
+            Step 1 - Insert your cranium ID and click on "Show Cranium".
         </p>
         <p>
-            Step 2 - Click on "Final Image" to render and save the image.
+            Step 2 - Choose the clothes you want.
+        </p>
+        <p>
+            Step 3 - Click on "Final Image" to render the savable image, and right-click it - save as.
         </p>
         <p><u>
             Note: If the image servers are slow, wait a little for the image to load.
@@ -32,23 +35,41 @@
         <form action="index.html" method="GET">
             <label> Cranium ID</label>
             <input name="cranium_id">
-            <button class="button">Suit up!</button>
+            <button class="button">Show Cranium</button>
+            <br><br>
+            <label> Choose Clothes</label>
+            <select onchange="changeFunction(this)">
+                <option selected value="default">Default</option>
+                <option value = "suit">Suit</option>
+                <option value = "action_r">Action</option>
+                <option value = "fur_g_foil">Fur</option>
+                <option value = "hoodie_e">Hoodie</option>
+                <option value = "jacket_r">Jacket</option>
+                <option value = "jump_s">Jump</option>
+                <option value = "polo_g">Polo</option>
+                <option value = "shirt_w">Shirt</option>
+                <option value = "sovietcoat_s">Soviet Coat</option>
+
+            </select><br>
+            
         </form>
     </div>
-     
+
     <div id="myHtml" class="container">
             <div class="container" id="canvas_id">
                 <div class="c-layer c-layer-1">
                     <img id="cranium" src="" class="image">
                 </div>
                 <div class="c-layer c-layer-2">
-                    <img src="test images/suit_w_pin-removebg2.png" class="image">
+                    <img src="" id='clothes' class="image"/>
                 </div>
             </div>
     </div>
  
     <input id="btn_convert" class="button2" type="button" value="Final Image" />
-    <div id="teste">
+    <div id="final_image">
     </div>
+
 </body>
+
 </html>
