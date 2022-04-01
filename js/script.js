@@ -40,7 +40,7 @@ $(document).ready(function () {
                 var anchorTag = document.createElement("a");
                 document.body.appendChild(anchorTag);
                 document.getElementById("final_image").appendChild(canvas);
-                anchorTag.download = "WickedClothing.jpg";
+                anchorTag.download = "WickedCostumes.jpg";
                 anchorTag.href = canvas.toDataURL();
                 anchorTag.target = '_blank';
                 anchorTag.click();

@@ -2,28 +2,46 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wicked Suits</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/html2canvas.js" type="text/javascript"></script> 
+    <link rel="icon" type="image/png" href="https://wickedcranium.com/assets/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wicked Costumes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/html2canvas.js" type="text/javascript"></script> 
+
+    <!-- Global site tag - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W7PQWCLYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5W7PQWCLYT');
+</script>
+
+<!-- End of Global site tag - Google Analytics -->
+
 </head>
 
 <body>
-    <div>
-        <h1>Wicked Suits</h1>
-        <p class="note">
-            For <a href="https://twitter.com/WickedCraniums" target="_blank">Wicked Craniums</a>, by <a href="https://twitter.com/cajutweets" target="_blank">caju</a>. Suit made by <a href="https://twitter.com/epkytnft" target="_blank">epkyt</a>. Clothing made by <a href="https://twitter.com/TinyMattWildcat" target="_blank">Wildcat</a>.
-      </p>
+    <div style="float: left;" class="notes">
+        <h1>Wicked Costumes</h1>
         <p>
-            Step 1 - Insert your cranium ID and click on "Show Cranium". Choose the clothes. Click on "Download Image".
+            Made by <a href="https://twitter.com/cajutweets" target="_blank">caju</a> for <a href="https://twitter.com/WickedCraniums" target="_blank">Wicked Craniums</a>. Suit made by <a href="https://twitter.com/epkytnft" target="_blank">epkyt</a>. Costumes made by <a href="https://twitter.com/TinyMattWildcat" target="_blank">Wildcat</a>.
+        </p>
+        <br>
+        <p id="instruct">
+            Insert your cranium ID and click on "Show Cranium". <br> Select the clothes you want. <br>Click "Download Image".
+        </p>
+        <p>
+            For custom work contact Wildcat.
         </p>
         <p><u>
             Note: If the image servers are slow, wait a little for the image to load.
         </u></p>
-    </div>
+    
 
     <div class="input">
         <form action="index.html" method="GET">
@@ -31,23 +49,119 @@
             <input name="cranium_id">
             <button class="button">Show Cranium</button>
             <br><br>
-            <label> Choose Clothes</label>
+            <label> Choose Costume </label>
             <select onchange="changeFunction(this)">
+
                 <option selected value="default">Default</option>
+                <option disabled="disabled">-----------</option>
+
+                <option value="ukraine"> &#128153 Ukraine &#128155 </option>
+                <option disabled="disabled">-----------</option>
+
                 <option value = "suit">Suit</option>
-                <option value = "action_r">Action</option>
-                <option value = "fur_g_foil">Fur</option>
-                <option value = "hoodie_e">Hoodie</option>
-                <option value = "jacket_r">Jacket</option>
-                <option value = "jump_s">Jump</option>
-                <option value = "polo_g">Polo</option>
-                <option value = "shirt_w">Shirt</option>
-                <option value = "sovietcoat_s">Soviet Coat</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "fur_w">Fur - White</option>
+                <option value = "fur_s">Fur - Silver</option>
+                <option value = "fur_r">Fur - Red</option>
+                <option value = "fur_g_foil">Fur - Gold</option>
+                <option value = "fur_e2">Fur - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "jump_w">Jumpsuit - White</option>
+                <option value = "jump_s">Jumpsuit - Silver</option>
+                <option value = "jump_r">Jumpsuit - Red</option>
+                <option value = "jump_g_foil">Jumpsuit - Gold</option>
+                <option value = "jump_e2">Jumpsuit - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "jacket_w2">Jacket - White</option>
+                <option value = "jacket_s">Jacket - Silver</option>
+                <option value = "jacket_r">Jacket - Red</option>
+                <option value = "jacket_g_foil">Jacket - Gold</option>
+                <option value = "jacket_e">Jacket - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "shirt_w">OG Shirt - White</option>
+                <option value = "shirt_s">OG Shirt - Silver</option>
+                <option value = "shirt_r">OG Shirt - Red</option>
+                <option value = "shirt_g_foil">OG Shirt - Gold</option>
+                <option value = "shirt_e">OG Shirt - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+                
+                <option value = "action_w">Action - White</option>
+                <option value = "action_s">Action - Silver</option>
+                <option value = "action_r">Action - Red</option>
+                <option value = "action_g">Action - Gold</option>
+                <option value = "action_e">Action - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "hoodie_w">Hoodie - White</option>
+                <option value = "hoodie_s">Hoodie - Silver</option>
+                <option value = "hoodie_r">Hoodie - Red</option>
+                <option value = "hoodie_g">Hoodie - Gold</option>
+                <option value = "hoodie_e">Hoodie - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "pilot_w">Pilot - White</option>
+                <option value = "pilot_s">Pilot - Silver</option>
+                <option value = "pilot_r">Pilot - Red</option>
+                <option value = "pilot_g">Pilot - Gold</option>
+                <option value = "pilot_e">Pilot - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "polo_w">Polo - White</option>
+                <option value = "polo_s">Polo - Silver</option>
+                <option value = "polo_r">Polo - Red</option>
+                <option value = "polo_g">Polo - Gold</option>
+                <option value = "polo_e">Polo - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "sovietcoat_w">Soviet Coat - White</option>
+                <option value = "sovietcoat_s">Soviet Coat - Silver</option>
+                <option value = "sovietcoat_r">Soviet Coat - Red</option>
+                <option value = "sovietcoat_g">Soviet Coat - Gold</option>
+                <option value = "sovietcoat_e">Soviet Coat - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "monk_w">Monk - White</option>
+                <option value = "monk_s">Monk - Silver</option>
+                <option value = "monk_r">Monk - Red</option>
+                <option value = "monk_g">Monk - Gold</option>
+                <option value = "monk_e">Monk - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "robe_w">Robe - White</option>
+                <option value = "robe_s">Robe - Silver</option>
+                <option value = "robe_r">Robe - Red</option>
+                <option value = "robe_g">Robe - Gold</option>
+                <option value = "robe_e">Robe - Emerald</option>
+
+                <option disabled="disabled">-----------</option>
+
+                <option value = "sheikh_w">Sheikh - White</option>
+                <option value = "sheikh_s">Sheikh - Silver</option>
+                <option value = "sheikh_r">Sheikh - Red</option>
+                <option value = "sheikh_g">Sheikh - Gold</option>
+                <option value = "sheikh_e">Sheikh - Emerald</option>
 
             </select><br>
             
         </form>
     </div>
+    <input id="btn_convert" class="button2" type="button" value="Download Image" />
+</div>
 
     <div id="myHtml" class="container">
             <div class="container" id="canvas_id">
@@ -60,9 +174,8 @@
             </div>
     </div>
  
-    <input id="btn_convert" class="button2" type="button" value="Final Image" />
-    <div id="final_image">
-    </div>
+
+    <div id="final_image"></div>
 
 </body>
 
